@@ -70,7 +70,7 @@ def prediction(filename,number_of_sequences,model_weights):
     Training=[0]*number_of_sequences
     for line in file:
       
-      #Let's split the line into an array called "fields" using the ";" as a separator:
+      #Let's split the line into an array called "fields" using the ";" as a separator :
       Data = line.split(':')
       Training[count] = Data
       count=count+1
