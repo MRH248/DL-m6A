@@ -178,7 +178,7 @@ def prediction(filename,number_of_sequences,model_weights):
     c3 = LayerNormalization()(c3)
     c3 = MaxPooling1D(2,strides=3)(c3)
     c3 = Dropout(0.10)(c3)
-    
+     
 
     c3 = Conv1D(16,3, strides=1, activation='relu')(c3)
     c3 = LayerNormalization()(c3)
