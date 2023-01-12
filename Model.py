@@ -185,7 +185,7 @@ def prediction(filename,number_of_sequences,model_weights):
     #c3 = MaxPooling1D(2,strides=2)(c3)         
     #fc0 = Dense(16, activation='elu')(fc)
     #R1=RandomFourierFeatures(300, kernel_initializer="gaussian")(fc)
-    fc = Flatten()(c3)
+    fc = Flatten()(c3) 
 
 
 
